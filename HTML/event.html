@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    
+     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+
+   <link rel="icon" sizes="180x180" href="../Photo/Tab_logo.png">
+    <title>Coffee Bean Bontique</title>
+
+</head>
+<body>
+    <header>
+        <section>
+            <div >
+               <img src="../Photo/logo-n.png" alt="Coffee Bean Logo" >
+          <span>Bean Boutique</span>
+            </div>
+            
+            <!-- Burger Menu Button -->
+            <div class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffee_section.html">Coffee</a></li>
+                    <li><a href="brewng_equipment.html">Equipments</a></li>
+                    <li><a href="special_offer.html">Special Offer</a></li>
+                    <li><a href="event.html">Events</a></li>
+                </ul>
+            </nav>
+            
+            <div class="cart-icon">
+          <a href="cart.html">
+            <i class="fa-solid fa-basket-shopping" aria-label="cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+        </section>
+    </header>
+
+    <section class="events-hero">
+        <div class="hero-content">
+            <i class="fas fa-calendar-alt"></i>
+            <h1>Coffee Events & Workshops</h1>
+            <p>Join us for exciting coffee experiences, workshops, and community gatherings</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span class="stat-number">25+</span>
+                    <span class="stat-label">Events Monthly</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Happy Attendees</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">Event Rating</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+     <section class="event-categories">
+        <div class="container">
+            <h2>Event Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Workshops</h3>
+                    <p>Learn new skills from coffee brewing to latte art in our hands-on workshops.</p>
+                    <span class="event-count">8 upcoming events</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-wine-glass-alt"></i>
+                    </div>
+                    <h3>Tastings</h3>
+                    <p>Discover new flavors and origins in our guided coffee tasting sessions.</p>
+                    <span class="event-count">6 upcoming events</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community</h3>
+                    <p>Connect with fellow coffee lovers in our community meetups and discussions.</p>
+                    <span class="event-count">15 upcoming events</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Upcoming Events</h2>
+        <div class="events-grid">
+            <div class="event-card fade-in">
+                <div class="event-image tasting-bg">
+                    <img src="../Photo/Event/iCoffee.jpg" alt="">
+                    <div class="event-category">Popular</div>
+                    <div class="event-date">
+                        <div class="day">5</div>
+                        <div class="month">SEP</div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <h3 class="event-title">Coffee & Canvas: Paint & Sip Night</h3>
+                    <div class="event-details">
+                        <div class="detail-item">
+                            <i class="far fa-clock"></i>
+                            <span>7:00 PM - 9:30 PM</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-users"></i>
+                            <span>30 seats available</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bean Boutique Main Shop</span>
+                        </div>
+                    </div>
+                    <p class="event-description">
+                        "Unleash your creativity while enjoying delicious, freshly brewed coffee in a relaxed atmosphere. Join talented local artists for a fun and inspiring guided painting session. 
+                    </p>
+                    <div class="event-footer">
+                        <div class="event-price">$35 per person</div>
+                        <button class="register-btn" >
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card fade-in">
+                <div class="event-image tasting-bg">
+                    <img src="../Photo/Event/coffee_testing.jpg" alt="">
+                    <div class="event-category">WEEKLy</div>
+                    <div class="event-date">
+                        <div class="day">5</div>
+                        <div class="month">SEP</div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <h3 class="event-title">Coffee Cupping & Flavor Exploration</h3>
+                    <div class="event-details">
+                        <div class="detail-item">
+                            <i class="far fa-clock"></i>
+                            <span>3:00 PM - 5:30 PM</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-users"></i>
+                            <span>25 seats available</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bean Boutique Shop</span>
+                        </div>
+                    </div>
+                    <p class="event-description">
+                        Discover the art of coffee tasting in this hands-on cupping session. Learn how to identify aroma, body, acidity, and flavor notes like a pro. Perfect for beginners and enthusiasts alike!
+                    </p>
+                    <div class="event-footer">
+                        <div class="event-price">$40 per person</div>
+                        <button class="register-btn" >
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card fade-in">
+                <div class="event-image tasting-bg">
+                    <img src="../Photo/Event/love.jpg" alt="">
+                    <div class="event-category">New</div>
+                    <div class="event-date">
+                        <div class="day">15</div>
+                        <div class="month">SEP</div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <h3 class="event-title">Love Is In The Air on a Cafe</h3>
+                    <div class="event-details">
+                        <div class="detail-item">
+                            <i class="far fa-clock"></i>
+                            <span>5:00 PM - 8:00 PM</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-users"></i>
+                            <span>25 seats available</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bean Boutique Romace Room</span>
+                        </div>
+                    </div>
+                    <p class="event-description">
+                         coming with a partner or arriving solo, enjoy curated coffee flights, romantic acoustic music, and conversation games designed to bring people closer. Includes a complimentary dessert pairing and a special “Love Latte” for the evening.
+                    </p>
+                    <div class="event-footer">
+                        <div class="event-price">Free Entry</div>
+                        <button class="register-btn" >
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Upcoming Workshop</h2>
+        <div class="events-grid">
+            <div class="event-card fade-in">
+                <div class="event-image tasting-bg">
+                    <img src="../Photo/Event/lattee_art.jpg" alt="">
+                    <div class="event-category">Popular</div>
+                    <div class="event-date">
+                        <div class="day">5</div>
+                        <div class="month">SEP</div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <h3 class="event-title">The Art of Latte Art</h3>
+                    <div class="event-details">
+                        <div class="detail-item">
+                            <i class="far fa-clock"></i>
+                            <span>3:00 PM – 5:00 PM</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-users"></i>
+                            <span>15 seats available</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bean Boutique Main Shop</span>
+                        </div>
+                    </div>
+                    <p class="event-description">
+                        Learn the basics of milk steaming and create beautiful rosettas, hearts, and tulips. Practice makes perfect in this hands-on art workshop.
+                    </p>
+                    <div class="event-footer">
+                        <div class="event-price">$35 per person</div>
+                        <button class="register-btn" >
+                            Join Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card fade-in">
+                <div class="event-image tasting-bg">
+                    <img src="../Photo/Event/Coffee_Roasting_training.jpg" alt="">
+                    <div class="event-category">WEEKLy</div>
+                    <div class="event-date">
+                        <div class="day">5</div>
+                        <div class="month">SEP</div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <h3 class="event-title"> Intro to Coffee Roasting</h3>
+                    <div class="event-details">
+                        <div class="detail-item">
+                            <i class="far fa-clock"></i>
+                            <span> 1:00 PM – 4:00 PM</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-users"></i>
+                            <span>25 seats available</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bean Boutique Roastery</span>
+                        </div>
+                    </div>
+                    <p class="event-description">
+                        Understand how green beans become your favorite roast. Try your hand at small-batch roasting and take home a bag of your custom blend.
+                    </p>
+                    <div class="event-footer">
+                        <div class="event-price">$40 per person</div>
+                        <button class="register-btn" >
+                            Join Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card fade-in">
+                <div class="event-image tasting-bg">
+                    <img src="../Photo/Event/Coffee&Sensory_Skills.jpg" alt="">
+                    <div class="event-category">New</div>
+                    <div class="event-date">
+                        <div class="day">15</div>
+                        <div class="month">SEP</div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <h3 class="event-title">Coffee & Sensory Skills</h3>
+                    <div class="event-details">
+                        <div class="detail-item">
+                            <i class="far fa-clock"></i>
+                            <span> 11:30 AM – 1:30 PM</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-users"></i>
+                            <span>25 seats available</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bean Boutique Roast Studio</span>
+                        </div>
+                    </div>
+                    <p class="event-description">
+                        Explore the sensory world of coffee—aroma, taste, mouthfeel, and acidity. Includes guided tasting and flavor wheel exercises.
+                    </p>
+                    <div class="event-footer">
+                        <div class="event-price">Free Entry</div>
+                        <button class="register-btn" >
+                            Join Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+        <!-- Registration Form -->
+        <div class="registration-section fade-in">
+            <div class="section-header">
+                <i class="fas fa-user-plus" ></i>
+                <h2 class="section-title">Register for Events</h2>
+            </div>
+            <p class="registration-title">Fill out the form below to reserve your spot at any of our upcoming events or
+                workshops.</p>
+
+            <form class="form-grid" onsubmit="handleRegistration(event)">
+                <div class="form-group">
+                    <label class="form-label">First Name *</label>
+                    <input type="text" class="form-input" name="firstName" aria-label="firstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Last Name *</label>
+                    <input type="text" class="form-input" name="lastName" aria-label="lastName" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Email Address *</label>
+                    <input type="email" class="form-input" name="email" aria-label="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Phone Number</label>
+                    <input type="tel" class="form-input" name="phone" aria-label="phone">
+                </div>
+
+                <div class="form-group full-width">
+                    <label class="form-label">Select Event/Workshop *</label>
+                    <select class="form-select" name="eventSelect" aria-label="choose" required>
+                        <option value="">Choose an event...</option>
+                        <option value="latte-art">Coffee & Canvas: Paint & Sip Night </option>
+                        <option value="jazz-night">Coffee Cupping & Flavor Exploration</option>
+                        <option value="home-brewing">Love Is In The Air on a Cafe</option>
+                        <option value="ethiopian-tasting">The Art of Latte Art</option>
+                        <option value="cupping">Intro to Coffee Roasting</option>
+                        <option value="book-club">Coffee & Sensory Skills</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Number of People</label>
+                    <select class="form-select" name="participants" aria-label="person">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5+">5+ People</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label class="form-label">Special Requests or Dietary Restrictions</label>
+                    <textarea class="form-textarea" name="notes"
+                        placeholder="Let us know about any allergies, dietary preferences, or special accommodations..." aria-label="note"></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <button type="submit" class="submit-btn" aria-label="sumit">
+                        <i class="fas fa-calendar-check"></i>
+                        Register Now
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+       <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+                <img src="../Photo/logo-n.png" alt="Bean Boutique Logo" >
+            <span>Bean Boutique</span>
+          </div>
+          <p class="footer-description">
+            Discover the finest coffee blends from around the world. Every cup tells a story of passion and craftsmanship since 1995.
+          </p>
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="homepage.html"><i class="fa-solid fa-home"></i>Home</a></li>
+            <li><a href="coffee_section.html"><i class="fa-solid fa-mug-saucer"></i>Coffee</a></li>
+            <li><a href="brewng_equipment.html"><i class="fa-solid fa-gear"></i>Equipment</a></li>
+            <li><a href="special_offer.html"><i class="fa-solid fa-tags"></i>Special Offers</a></li>
+            <li><a href="event.html"><i class="fa-solid fa-calendar-days"></i>Events</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-graduation-cap"></i>Coffee Brewing Classes</a></li>
+            <li><a href="#"><i class="fa-solid fa-seedling"></i>Custom Coffee Blends</a></li>
+            <li><a href="#"><i class="fa-solid fa-tools"></i>Coffee Equipment Rental</a></li>
+            <li><a href="#"><i class="fa-solid fa-utensils"></i>Corporate Catering</a></li>
+            <li><a href="#"><i class="fa-solid fa-champagne-glasses"></i>Private Events</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>193 Wardour St, London W1F 8ZF, United Kingdom</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+44 20 7123 4567</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@beanboutique.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>Mon-Sun: 10AM - 8PM</span>
+            </div>
+          </div>
+        </div>
+
+              </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Success Registration Popup -->
+    <div id="registrationPopup" class="popup-overlay">
+        <div class="popup-content">
+            <div class="event-popup-header">
+                <!-- <i class="fas fa-check-circle success-icon"></i> -->
+                <h2>Registration Successful!</h2>
+            </div>
+            <div class="popup-body">
+                <p>Thank you for registering! We've received your registration and will send you a confirmation email shortly.</p>
+                <div class="popup-details">
+                    <div class="detail-row">
+                        <i class="fas fa-user"></i>
+                        <span id="popupName"></span>
+                    </div>
+                    <div class="detail-row">
+                        <i class="fas fa-envelope"></i>
+                        <span id="popupEmail"></span>
+                    </div>
+                    <div class="detail-row">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span id="popupEvent"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="event-popup-footer">
+                <button class="popup-btn primary" onclick="closeRegistrationPopup()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Great!
+                </button>
+                <button class="popup-btn secondary" onclick="resetForm()">
+                    Register Another Event
+                </button>
+            </div>
+            <button class="popup-close" onclick="closeRegistrationPopup()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+    <script src="../JS/script.js"></script>
+    <script src="../JS/event.js"></script>
+
+ 
+</body>

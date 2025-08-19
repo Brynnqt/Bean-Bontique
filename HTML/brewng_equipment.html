@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="../CSS/style.css" >
+    <link rel="icon" sizes="180x180" href="../Photo/Tab_logo.png" >
+    <title>Coffee Bean Bontique</title>
+  </head>
+  <body>
+    <header>
+      <section>
+        <div>
+          <img src="../Photo/logo-n.png" alt="Coffee Bean Logo" >
+          <span>Bean Boutique</span>
+        </div>
+
+        <!-- Burger Menu Button -->
+        <div class="burger-menu" id="burgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu" id="navMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="coffee_section.html">Coffee</a></li>
+            <li><a href="brewng_equipment.html">Equipments</a></li>
+            <li><a href="special_offer.html">Special Offer</a></li>
+            <li><a href="event.html">Events</a></li>
+          </ul>
+        </nav>
+
+        <div class="cart-icon">
+          <a href="cart.html">
+            <i class="fa-solid fa-basket-shopping" aria-label="cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+      </section>
+    </header>
+
+    <div class="header-section-equipment">
+      <div class="header-overlay">
+        <div class="header-content">
+          <h1>Premium Coffee Beans & Equipments</h1>
+          <p>
+            Explore premium coffee beans and pro brewing gear for the perfect
+            cup at home.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <aside class="filter-sidebar">
+        <h3>FILTERS</h3>
+
+        <div class="filter-section">
+          <h4>Type</h4>
+          <ul>
+            <li><input type="checkbox" aria-label="All" checked > All</li>
+            <li><input type="checkbox" aria-label="Coffee Maker" >Coffee Maker</li>
+            <li><input type="checkbox" aria-label="Espresso Machines" >Espresso Machines</li>
+            <li><input type="checkbox" aria-label="Grinder" >Grinders</li>
+            <li><input type="checkbox" aria-label="Grinder" >Accessories</li>
+
+          </ul>
+        </div>
+        <div class="filter-section">
+          <h4>Price Range</h4>
+          <ul>
+            <li><input type="checkbox" aria-label="200" > <label>Under $100 </label></li>
+            <li><input type="checkbox" aria-label="200" > <label>$100 - $200 </label></li>
+            <li><input type="checkbox" aria-label="200-500" > <label>$200 - $500 </label></li>
+            <li><input type="checkbox" aria-label="500+" > <label>$500+ </label></li>
+          </ul>
+        </div>
+      </aside>
+      <!-- Search and Filter -->
+      <div class="content-area">
+        <div class="search-filter-container">
+          <form class="search-form" action="#" method="get">
+            <input 
+              type="search"
+              id="search-input"
+              name="q"
+              placeholder="Search for your favorite coffee..."
+            >
+            <button type="submit"><i class="fas fa-search" aria-label="search"></i></button>
+          </form>
+        </div>
+
+        <div class="products-grid" id="product-items">
+          <div class="product-card" data-category="coffee maker" id="coffee_maker">
+            <!-- <span class="discount">10% Discount</span> -->
+            <img
+              src="../Photo/Product/Breville_Barista_Express.jpg"
+              alt="Breville Barista Express"
+            >
+            <h3>Breville Barista Express</h3>
+            <div class="stock-status in-stock">In Stock</div>
+            <p class="product-description">
+              All-in-one espresso machine with a built-in grinder, perfect for
+              fresh-ground espresso shots.
+            </p>
+            <p class="tips">
+              Tips: Fresh beans. Correct grind. Even tamp. 25–30 sec shot.
+              Preheat. Clean often.
+            </p>
+            <!--  -->
+            <div class="star-price">
+              <div class="product-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                
+              </div>
+              <p class="price">$699</p>
+            </div>
+            <button class="btn">Add to Cart</button>
+          </div>
+          <div class="product-card" data-category="coffee maker">
+            <img
+              src="../Photo/Product/Keurig_K-Elite.jpg"
+              alt="Classic Espresso"
+            >
+            <h3>Keurig K-Elite Single Serve</h3>
+            <div class="stock-status low-stock">Only 3 left</div>
+            <p class="product-description">
+              Fast and convenient pod-based coffee maker with customizable brew
+              sizes and iced coffee option.
+            </p>
+            <p class="tips">
+              Tips: Use fresh water. Select cup size. Insert pod. Brew in
+              seconds. Use Strong Brew for bold flavor.
+            </p>
+            <div class="star-price">
+              <div class="product-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+               
+              </div>
+              <p class="price">$149</p>
+            </div>
+            <button class="btn">Add to Cart</button>
+          </div>
+          <div class="product-card" data-category="espresso machines">
+            <!-- <span class="discount">10% Discount</span> -->
+            <img
+              src="../Photo/Product/Flair_Pro2.jpg"
+              alt="Breville Barista Express"
+            >
+            <h3>Flair Pro 2</h3>
+            <div class="stock-status in-stock">In Stock</div>
+            <p class="product-description">
+              a portable, manual espresso maker known for its high-quality
+              espresso production and durable construction.
+            </p>
+            <p class="tips">
+              Tips: Fresh fine grind. Preheat chamber. Even tamp. Steady
+              pressure. 30–45 sec shot. Clean after use.
+            </p>
+            <div class="star-price">
+              <div class="product-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+               
+              </div>
+              <p class="price">$700</p>
+            </div>
+            <button class="btn">Add to Cart</button>
+          </div>
+          <div class="product-card" data-category="espresso machines">
+            <!-- <span class="discount">10% Discount</span> -->
+            <img
+              src="../Photo/Product/De'Longhi.jpg"
+              alt="De'Longhi Dedica Deluxe"
+            >
+            <h3>De'Longhi Dedica Deluxe</h3>
+            <div class="stock-status in-stock">In Stock</div>
+            <p class="product-description">
+              A compact and sleek semi-automatic espresso machine with a manual
+              frother and fast heat-up time. Great for small kitchens and
+              beginner users.
+            </p>
+            <p class="tips">
+              Tips: Use fresh grind. Preheat machine. Tamp evenly. Aim 25–30 sec
+              shot. Purge steam wand.
+            </p>
+            <div class="star-price">
+              <div class="product-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                
+              </div>
+              <p class="price">$300</p>
+            </div>
+            <button class="btn">Add to Cart</button>
+          </div>
+          <div class="product-card" data-category="grinders">
+            <!-- <span class="discount">10% Discount</span> -->
+            <img
+              src="../Photo/Product/Breville.jpg"
+              alt="Breville Smart Grinder Pro"
+            >
+            <h3>Breville Smart Grinder Pro</h3>
+            <div class="stock-status in-stock">In Stock</div>
+            <p class="product-description">
+              This smart electric burr grinder offers up to 600 grind settings
+              for precision dialing—from espresso to coarse drip, through
+              conical stainless‑steel burrs and a digital LCD interface
+            </p>
+            <p class="tips">
+              Tips: Use fresh beans. Adjust grind size. Select grind time. Clean
+              burrs regularly. Store beans airtight.
+            </p>
+            <div class="star-price">
+              <div class="product-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                
+              </div>
+              <p class="price">$200</p>
+            </div>
+            <button class="btn">Add to Cart</button>
+          </div>
+          <div class="product-card" data-category="grinders">
+            <!-- <span class="discount">10% Discount</span> -->
+            <img
+              src="../Photo/Product/Eureka_Mignon_Specialita.jpg"
+              alt="Eureka Mignon Specialita"
+            >
+            <h3>Eureka Mignon Specialita</h3>
+            <div class="stock-status low-stock">Only 3 left</div>
+            <p class="product-description">
+              This premium on-demand espresso grinder features 55 mm hardened
+              flat steel burrs, silent motor technology,stepless micrometric
+              adjustment for precise grind control.
+            </p>
+            <p class="tips">
+              Tips: Use fresh beans. Adjust micrometric grind. Set timer dose.
+              Grind direct to portafilter.
+            </p>
+            <div class="star-price">
+              <div class="product-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                
+              </div>
+              <p class="price">$540</p>
+            </div>
+            <button class="btn">Add to Cart</button>
+          </div>
+               <div class="product-card" data-category="Accessories">
+            <img
+              src="../Photo/Product/SteamCraft™_Stovetop.jpg"
+              alt="SteamCraft™ Stovetop Espresso Maker"
+            >
+            <h3> SteamCraft™ Stovetop Espresso Maker </h3>
+            <div class="stock-status in-stock">In Stock</div>
+            <p class="product-description">
+              Classic Moka pot design brews rich, bold espresso-style coffee on any stovetop compact, durable, and easy to use.
+            </p>
+            <p class="tips">
+               Tips: Fill bottom chamber with water below the valve. Use fine-ground coffee. Brew on low heat.
+            </p>
+            <div class="star-price">
+              <div class="product-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+               
+              </div>
+              <p class="price">$34.99</p>
+            </div>
+            <button class="btn">Add to Cart</button>
+          </div>
+               <div class="product-card" data-category="Accessories">
+            <img
+              src="../Photo/Product/ChillBrew™_Cold_Brew.jpg"
+              alt=""
+            >
+            <h3>ChillBrew™ Cold Brew Coffee Pitcher</h3>
+            <div class="stock-status low-stock">Only 3 left</div>
+            <p class="product-description">
+               Sleek cold brew system with a built-in fine mesh filter, ideal for smooth, low-acid coffee right from your fridge.
+            </p>
+            <p class="tips">
+              Tips: Use coarse-ground coffee. Steep in cold water for 12–24 hours. Store in fridge. 
+            </p>
+            <div class="star-price">
+              <div class="product-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+               
+              </div>
+              <p class="price">$42.50</p>
+            </div>
+            <button class="btn">Add to Cart</button>
+          </div>
+               <div class="product-card" data-category="Accessories">
+            <img
+              src="../Photo/Product/Milk_Frother.jpg"
+              alt="AeroFlow™ Handheld Milk Frother"
+            >
+            <h3>AeroFlow™ Handheld Milk Frother</h3>
+            <div class="stock-status in-stock">In Stock</div>
+            <p class="product-description">
+               Compact, battery-powered milk frother for creating creamy foam for lattes, cappuccinos, and more in seconds.
+            </p>
+            <p class="tips">
+              Tips: Use warm milk for best foam. Submerge whisk fully before turning on. Clean immediately after use.
+            </p>
+            <div class="star-price">
+              <div class="product-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+               
+              </div>
+              <p class="price">$19.95</p>
+            </div>
+            <button class="btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="why-choose-us">
+      <h2>Why Choose Our Equipment</h2>
+      <div class="features">
+        <div class="feature-box">
+          <!-- <i class="fa-solid fa-award"></i> -->
+          <img src="../Photo/Product/quality.png" alt="Sustainably Sourced" >
+          <h4>Barista‑Approved Quality</h4>
+          <p>
+            Carefully selected equipment tested for performance, consistency,
+            and durability.
+          </p>
+        </div>
+        <div class="feature-box">
+          <!-- <i class="fa-solid fa-shield-halved"></i> -->
+          <img src="../Photo/Product/shield.png" alt="Sustainably Sourced" >
+          <h4>Warranty & Reliable Service</h4>
+          <p>
+            Each purchase is backed by warranty and access to trusted service
+            partners.
+          </p>
+        </div>
+        <div class="feature-box">
+          <!-- <i class="fa-solid fa-headset"></i> -->
+          <img
+            src="../Photo/Product/customer-service.png"
+            alt="Sustainably Sourced"
+          >
+          <h4>Expert Support</h4>
+          <p>
+            Get guidance from our coffee experts to choose, set up, and maintain
+            your gear.
+          </p>
+        </div>
+        <div class="feature-box">
+          <!-- <i class="fa-solid fa-truck-fast"></i> -->
+          <img src="../Photo/Product/time.png" alt="Sustainably Sourced" >
+          <h4>Fast, Secure Delivery</h4>
+          <p>
+            Well‑packaged and quick shipping so you can start brewing without
+            delay.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="../Photo/logo-n.png" alt="Bean Boutique Logo" >
+            <span>Bean Boutique</span>
+          </div>
+          <p class="footer-description">
+            Discover the finest coffee blends from around the world. Every cup
+            tells a story of passion and craftsmanship since 1995.
+          </p>
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>
+              <a href="homepage.html"><i class="fa-solid fa-home"></i>Home</a>
+            </li>
+            <li>
+              <a href="coffee_section.html"
+                ><i class="fa-solid fa-mug-saucer"></i>Coffee</a
+              >
+            </li>
+            <li>
+              <a href="brewng_equipment.html"
+                ><i class="fa-solid fa-gear"></i>Equipment</a
+              >
+            </li>
+            <li>
+              <a href="special_offer.html"
+                ><i class="fa-solid fa-tags"></i>Special Offers</a
+              >
+            </li>
+            <li>
+              <a href="event.html"
+                ><i class="fa-solid fa-calendar-days"></i>Events</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Our Services</h4>
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-graduation-cap"></i>Coffee Brewing
+                Classes</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-seedling"></i>Custom Coffee Blends</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-tools"></i>Coffee Equipment Rental</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-utensils"></i>Corporate Catering</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-champagne-glasses"></i>Private Events</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>193 Wardour St, London W1F 8ZF, United Kingdom</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+44 20 7123 4567</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@beanboutique.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>Mon-Sun: 10AM - 8PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../JS/script.js"></script>
+    <script src="../JS/equipment.js"></script>
+  </body>
+</html>

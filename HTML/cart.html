@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+    <link rel="stylesheet" href="../CSS/style.css" >
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="icon" sizes="180x180" href="../Photo/Tab_logo.png">
+    <title>Coffee Bean Bontique</title>
+  </head>
+
+  <body>
+    <header>
+      <section>
+        <div >
+          <img src="../Photo/logo-n.png" alt="Coffee Bean Logo" >
+          <span>Bean Boutique</span>
+        </div>
+
+        <!-- Burger Menu Button -->
+        <div class="burger-menu" id="burgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu" id="navMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="coffee_section.html">Coffee</a></li>
+            <li><a href="brewng_equipment.html">Equipments</a></li>
+            <li><a href="special_offer.html">Special Offer</a></li>
+            <li><a href="event.html">Events</a></li>
+          </ul>
+        </nav>
+
+        <div class="cart-icon">
+          <a href="cart.html">
+            <i class="fa-solid fa-basket-shopping" aria-label="cart"></i>
+            <span class="cart-count">0</span>
+          </a>  
+        </div>
+      </section> 
+    </header>
+
+    <div class="header-section-cart">
+        <div class="header-overlay">
+            <div class="header-content">
+                <h1>Your Cart</h1>
+                <p>Review your selected brews and get ready to enjoy your perfect cup of coffee.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart">
+      <!-- <h2 class="cart-title">Your Cart</h2> -->
+      <div class="cart-content">
+        <!-- <div class="cart-box">
+              <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=300&h=200&fit=crop"
+                  class="cart-img" alt="">
+              <div class="cart-detail">
+                  <h2 class="cart-product-title">Classic Espresso</h2>
+                  <span class="cart-price">$3.49</span>
+                  <div class="cart-quantity">
+                      <button id="minus">-</button>
+                      <span class="number">1</span>
+                      <button id="plus">+</button>
+                  </div>
+              </div>
+              <i class="fa-solid fa-trash" id="delete"></i>
+          </div> -->
+      </div>
+      
+        <div class="total">
+          <div class="summary">Order Summary</div>
+          <div class="Sub-total">Subtotal</div>
+          <div class="Sub-total-price">$0</div>
+
+
+          <div class="shipping">Shipping</div>
+          <div class="shipping-price">Free</div>
+
+
+          <div class="tax">Tax 5%</div>
+          <div class="tax-price">$0</div>
+
+          <div class="summary-divider strong"></div>
+
+          <div class="summary-divider strong"></div>
+
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+          <div class="discount-code">
+            <input type="text" placeholder="Discount code" aria-label="Discount code" >
+            <button class="apply-discount" type="button">Apply</button>
+          </div>
+        <button class="btn-buy">Proceed CheckOut</button>
+        <button class="btn-clear">Clear ALL</button>
+        <p class="payment-title">Accept Payment</p>
+        <div class="payment">
+          
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-jcb"></i>
+          <i class="fa-brands fa-cc-apple-pay"></i>
+          <i class="fa-brands fa-google-pay"></i>
+        
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+                        <img src="../Photo/logo-n.png" alt="Bean Boutique Logo" >
+
+            <span>Bean Boutique</span>
+          </div>
+          <p class="footer-description">
+            Discover the finest coffee blends from around the world. Every cup
+            tells a story of passion and craftsmanship since 1995.
+          </p>
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>
+              <a href="homepage.html"><i class="fa-solid fa-home"></i>Home</a>
+            </li>
+            <li>
+              <a href="coffee_section.html"
+                ><i class="fa-solid fa-mug-saucer"></i>Coffee</a
+              >
+            </li>
+            <li>
+              <a href="brewng_equipment.html"
+                ><i class="fa-solid fa-gear"></i>Equipment</a
+              >
+            </li>
+            <li>
+              <a href="special_offer.html"
+                ><i class="fa-solid fa-tags"></i>Special Offers</a
+              >
+            </li>
+            <li>
+              <a href="event.html"
+                ><i class="fa-solid fa-calendar-days"></i>Events</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Our Services</h4>
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-graduation-cap"></i>Coffee Brewing
+                Classes</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-seedling"></i>Custom Coffee Blends</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-tools"></i>Coffee Equipment Rental</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-utensils"></i>Corporate Catering</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-champagne-glasses"></i>Private Events</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>193 Wardour St, London W1F 8ZF, United Kingdom</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+44 20 7123 4567</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@beanboutique.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>Mon-Sun: 10AM - 8PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../JS/script.js"></script>
+    <script src="../JS/cart.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="icon" sizes="180x180" href="../Photo/Tab_logo.png">
+    <title>Coffee Bean Bontique</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <div>
+          <img src="../Photo/logo-n.png" alt="Coffee Bean Logo" >
+          <span>Bean Boutique</span>
+            </div>
+            <div class="burger-menu" id="burgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <nav class="nav-menu" id="navMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>      
+            <li><a href="coffee_section.html">Coffee</a></li>
+            <li><a href="brewng_equipment.html">Equipments</a></li>
+            <li><a href="special_offer.html">Special Offer</a></li>
+            <li><a href="event.html">Events</a></li>
+          </ul>
+        </nav>
+             <div class="cart-icon">
+          <a href="cart.html">
+            <i class="fa-solid fa-basket-shopping" aria-label="cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+        </section>
+    </header>
+    <div class="header-section">
+        <div class="header-overlay">
+            <div class="header-content">
+                <h1>Choose Your Coffee</h1>
+                <p>Discover our carefully curated selection of premium coffee blends</p>
+            </div>
+        </div>
+    </div>
+         
+    
+  
+    <div class="main-content">
+        <aside class="filter-sidebar">
+            <h3>FILTERS</h3>
+
+            <div class="filter-section">
+                <h4>Type</h4>
+                <ul>
+                    <li><input type="checkbox" aria-label="All" checked> All</li>
+                    <li><input type="checkbox" aria-label="Espresso"> Espresso</li>
+                    <li><input type="checkbox" aria-label="Latte"> Latte</li>
+                    <li><input type="checkbox" aria-label="Cappuccino"> Cappuccino</li>
+                    <!-- <li><input type="checkbox"> Tea</li> -->
+                    <li><input type="checkbox" aria-label="Coffee Beans">Coffee Beans</li>
+                </ul>
+            </div>
+            
+        </aside>
+        <!-- Search and Filter -->
+        <div class="content-area">
+            <div class="search-filter-container" >
+                <form class="search-form" action="#" method="get">
+                    <input type="search" id="search-input" name="q" placeholder="Search for your favorite coffee...">
+                    <button type="submit" aria-label="search"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <!-- Menu Items Grid -->
+            <div class="products-grid" id="menu-items">
+                <!-- Espresso Section -->
+                <div class="product-card" id="espresso" data-category="espresso">
+                    <img src="../Photo/Coffee/e_1.jpg"
+                        alt="Classic Espresso">
+                    <h3>Classic Espresso</h3>
+                    <!-- <p class="p"></p> -->
+                    <div class="product-description">
+                        Rich and bold single shot espresso.
+                                              
+                    </div>
+                    <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Caramel</span>
+                                <span class="note">Nutty</span>
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Espresso Machine</span>
+                                <span class="method">Moka Pot</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                    <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="price" >$3.49</p>
+                    </div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="espresso">
+                    <img src="../Photo/Coffee/E-2.jpeg"
+                        alt="Double Espresso">
+                    <h3>Double Espresso</h3>
+                    <div class="stock-status new-arrival">New Arrival</div>
+                    <div class="product-description">
+                        Intense double shot for coffee enthusiasts.
+                          
+                    </div>
+                     <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Dark Chocolate</span>
+                                <span class="note">Caramel</span>
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Espresso Machine</span>
+                                <span class="method">Moka Pot</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                    <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                        <p class="price" >$4.79</p>
+                    </div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="espresso">
+            
+
+                    <img src="../Photo/Coffee/romano.jpg"
+                        alt="Espresso Romano">
+                    <h3>Espresso Romano</h3>
+                    <div class="stock-status bestseller">Bestseller</div>
+                    <!-- <div class="stock-status low-stock">Out Of Stock</div> -->
+
+                    <div class="product-description">
+                         Espresso with a twist of bright lemon zest.                                              
+                    </div>
+                     <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Bright Citrus</span>
+                                <span class="note">Rich Espresso</span>
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Espresso Machine</span>
+                                <span class="method">Moka Pot</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                        <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="price" >$3.99</p>
+                    </div>
+                    <button class="btn">Add to Cart</button>
+
+                </div>
+
+                <!-- Latte Section -->
+                <div class="product-card" id="latte" data-category="latte">
+                    <img src="../Photo/Coffee/L_1.jpeg"
+                        alt="Vanilla Latte">
+                    <h3>Vanilla Latte</h3>
+                    <div class="stock-status bestseller">Bestseller</div>
+
+                    <div class="product-description">
+                        Smooth espresso with steamed milk and vanilla.                              
+                    </div>
+                     <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Vanilla</span>
+                                <span class="note">Creamy</span>
+                                <span class="note">Sweet</span>                              
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Espresso Machine</span>
+                                <span class="method">Steam Wand</span>
+                            </div>
+                    </div>                   
+                   <div class="star-price">
+                     <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="price" >$5.29</p>
+                   </div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="latte">
+                    <img src="../Photo/Coffee/L_2.jpeg"
+                        alt="Caramel Latte">
+                    <h3>Caramel Latte</h3>
+                    
+                    <div class="product-description">
+                        Rich, sweet caramel syrup with espresso and steamed milk.
+                    </div>
+                     <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Velvety Milk</span>
+                                <span class="note">Caramel</span>
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Espresso Machine</span>
+                                <span class="method">Milk Frother</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                        <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="price" >$5.49</p>
+                    </div>
+                    <button class="btn"     >Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="latte">
+                    <img src="../Photo/Coffee/L_3.jpg"
+                        alt="Hazelnut Latte">
+                    <h3>Hazelnut Latte</h3>
+                    <div class="product-description">
+                        Nutty hazelnut flavor with creamy steamed milk.
+                    </div>
+                     <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Roasted Hazelnut</span>
+                                <span class="note">Creamy Espresso</span>
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Espresso Machine</span>
+                                <span class="method">Milk Frother</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                        <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="price" >$5.39</p>
+                    </div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="latte">
+                    <img src="../Photo/Coffee/L_4.jpg"
+                        alt="Coconut Latte">
+                    <h3>Coconut Latte</h3>
+                    <div class="stock-status new-arrival">New Arrival</div>
+                    <!-- <p class="product-description"></p> -->
+                    <div class="product-description">
+                        Tropical coconut milk with rich espresso and ice.
+                    </div>
+                     <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Toasted Coconut</span>
+                                <span class="note">Mellow Espresso</span>
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">French Press</span>
+                                <span class="method">Blender </span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                         <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="price" >$5.79</p>
+                    </div>
+                   
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <!-- Cappuccino Section -->
+                <div class="product-card" id="cappuccino" data-category="cappuccino">
+                    <img src="../Photo/Coffee/C_1.jpg"
+                        alt="Classic Cappuccino">
+                    <h3 >Classic Cappuccino</h3>
+                    <div class="stock-status bestseller">Bestseller</div>
+                    <div class="product-description">
+                        Perfect balance of espresso, steamed milk, and foam.
+                    </div>
+                     <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Bold Espresso</span>
+                                <span class="note"> Steamed Milk</span>
+                                <!-- <span class="note"> Light Foam</span> -->
+
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Capsule Machine </span>
+                                <span class="method">Steam Wand</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                        <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="price" >$4.89</p>
+                    </div>
+                    
+                    <button class="btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="cappuccino">
+                    <img src="../Photo/Coffee/C_2.jpg"
+                        alt="Cinnamon Cappuccino">
+                    <h3>Cinnamon Cappuccino</h3>
+                    
+                    <div class="product-description">
+                        Warm cinnamon spice with rich, creamy cappuccino.
+                    </div>
+                     <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note"> Warm Cinnamon</span>
+                                <span class="note">Foamy Milk</span>
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Capsule Machine</span>
+                                <span class="method">Blender</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                        <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="price" >$5.19</p>
+                    </div>
+                    
+                    <button class="btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="cappuccino">
+                    <img src="../Photo/Coffee/C_3.jpg"
+                        alt="Mocha Cappuccino">
+                    <h3>Mocha Cappuccino</h3>
+                    <div class="stock-status bestseller">Bestseller</div>
+                    <div class="product-description">
+                        Rich chocolate meets classic cappuccino.
+                    </div>
+                     <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Dark Chocolate</span>
+                                <span class="note">  Espresso</span>
+                                <!-- <span class="note">  Sweet Milk</span> -->
+
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Espresso Machine</span>
+                                <span class="method">Moka Pot</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                         <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="price" >$5.59</p>
+                    </div>
+                   
+                    <button class="btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="cappuccino">
+                    <img src="../Photo/Coffee/C_4.jpg"
+                        alt="Almond Cappuccino">
+                    <h3>Almond Cappuccino</h3>
+                    <div class="product-description">
+                        Creamy almond milk with perfect foam.
+                    </div>
+                     <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Nutty Almond</span>
+                                <span class="note">Smooth Espresso</span>
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Espresso Machine</span>
+                                <span class="method">Moka Pot</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                        <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="price" >$5.29</p>
+                    </div>
+                    
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <!-- Tea Section -->
+                <!-- <div class="product-card" data-category="tea">
+                    <img src="../Photo/Coffee/Lemon.jpg"
+                        alt="Lemon Tea Hot">
+                    <h3>Lemon Tea Hot</h3>
+                    <div class="product-description">
+                        Refreshing hot tea with fresh Lemon.
+                    </div>
+                     <div class="extra-details">
+
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Citrusy Lemon</span>
+                                <span class="note">Light Astringency</span>
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Teapot</span>
+                                <span class="method">Kettle</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                        <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="price" >$3.99</p>
+                    </div>
+                    
+                    <button class="btn" >Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="tea">
+                    <img src="../Photo/Coffee/Premium Green Tea.jpg"
+                        alt="Green Tea">
+                    <h3>Premium Green Tea</h3>
+                    <div class="product-description">
+                        Antioxidant-rich green tea blend.
+                    </div>
+                     <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note"> Fresh Grass</span>
+                                <span class="note">Umami</span>
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Teapot</span>
+                                <span class="method">Kettle</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                        <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="price" >$4.29</p>
+                    </div>
+                    
+                    <button class="btn" >Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="tea">
+                    <img src="../Photo/Coffee/grat Tea.avif"
+                        alt="Earl Grey Tea">
+                    <div class="stock-status new-arrival">New Arrival</div>
+                    <h3>Earl Grey Tea</h3>
+                    <div class="product-description">
+                        Classic bergamot-flavored black tea
+                    </div>
+                     <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Bergamot Citrus </span>
+                                <span class="note">Floral Black Tea</span>
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Teapot</span>
+                                <span class="method">Kettle</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                        <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="price" >$4.49</p>
+                    </div>
+                    
+                    <button class="btn">Add to Cart</button>
+                </div> -->
+
+                <div class="product-card" data-category="espresso">
+                    <img src="../Photo/Coffee/Americano.jpg"
+                        alt="Americano">
+                    <h3>Americano</h3>
+                    <div class="product-description">
+                        Espresso with hot water for a smooth taste.
+                    </div>
+                     <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Bold </span>
+                                <span class="note">Smooth Bitterness</span>
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Espresso Machine</span>
+                                <span class="method">Moka Pot</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                          <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="price" >$3.79</p>
+                    </div>
+                  
+                    <button class="btn">Add to Cart</button>
+                </div>
+            <div class="product-card" data-category="coffee beans" id="coffee_beans" >
+            <!-- <span class="discount">10% Discount</span> -->
+            <img src="../Photo/Product/Robusta_Espresso_Beans.jpg" alt="Classic_Espresso" >
+            <h3>Robusta Espresso Beans</h3>
+            <div class="stock-status low-stock">Only 5 left</div>
+
+            <p class="product-description">
+              Bold espresso blend packed with caffeine, featuring a thick crema and hints of dark chocolate. Perfect for lattes and cappuccinos.
+            </p>
+            <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Bold </span>
+                                <span class="note">Smooth Bitterness</span>
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Espresso Machine</span>
+                                <span class="method">Moka Pot</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                         <div class="product-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">$10.49 per 250g</p>
+                    </div>
+           
+            <button class="btn">Add to Cart</button>
+          </div>
+          <div class="product-card" data-category= "Coffee Beans ">
+            <img src="../Photo/Product/Jamaican_Blue_Mountain_Beans.jpg" alt="Classic Espresso" >
+            <h3>Jamaican Blue Mountain Beans</h3>
+            <div class="stock-status in-stock">In Stock</div>
+            <p class="product-description">
+Renowned for their smooth, mild flavor and low bitterness, these beans deliver a rich aroma with notes of chocolate and nuts.            
+</p>
+            <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Bold </span>
+                                <span class="note">Smooth Bitterness</span>
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Espresso Machine</span>
+                                <span class="method">Moka Pot</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                        <div class="product-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">$39.99 per 250g</p>
+                    </div>
+            
+            <button class="btn">Add to Cart</button>
+          </div>
+          <div class="product-card" data-category="Coffee Beans">
+            <!-- <span class="discount">10% Discount</span> -->
+            <img src="../Photo/Product/Ethiopian_Yirgacheffe_Beans.jpg" alt="Classic_Espresso">
+            <h3>Ethiopian Yirgacheffe Beans</h3>
+            <div class="stock-status in-stock">In Stock</div>
+            <p class="product-description">
+              Handpicked from the highlands of Ethiopia, these premium beans boast bright citrus notes, floral undertones, and a silky finish.
+            </p>
+            <div class="extra-details">
+                            <div class="tasting-notes">
+                                <i class="fas fa-coffee"></i> 
+                                <span class="note">Bold </span>
+                                <span class="note">Smooth Bitterness</span>
+                            </div>
+                            <div class="brew-method">
+                                <i class="fas fa-fire"></i> 
+                                <span class="method">Espresso Machine</span>
+                                <span class="method">Moka Pot</span>
+                            </div>
+                    </div>
+                    <div class="star-price">
+                        <div class="product-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">$24.99 per 250g</p>
+                    </div>
+            
+            <button class="btn">Add to Cart</button>
+          </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+      <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+                <img src="../Photo/logo-n.png" alt="Bean Boutique Logo" >
+            <span>Bean Boutique</span>
+          </div>
+          <p class="footer-description">
+            Discover the finest coffee blends from around the world. Every cup tells a story of passion and craftsmanship since 1995.
+          </p>
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="homepage.html"><i class="fa-solid fa-home"></i>Home</a></li>
+            <li><a href="coffee_section.html"><i class="fa-solid fa-mug-saucer"></i>Coffee</a></li>
+            <li><a href="brewng_equipment.html"><i class="fa-solid fa-gear"></i>Equipment</a></li>
+            <li><a href="special_offer.html"><i class="fa-solid fa-tags"></i>Special Offers</a></li>
+            <li><a href="event.html"><i class="fa-solid fa-calendar-days"></i>Events</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-graduation-cap"></i>Coffee Brewing Classes</a></li>
+            <li><a href="#"><i class="fa-solid fa-seedling"></i>Custom Coffee Blends</a></li>
+            <li><a href="#"><i class="fa-solid fa-tools"></i>Coffee Equipment Rental</a></li>
+            <li><a href="#"><i class="fa-solid fa-utensils"></i>Corporate Catering</a></li>
+            <li><a href="#"><i class="fa-solid fa-champagne-glasses"></i>Private Events</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>193 Wardour St, London W1F 8ZF, United Kingdom</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+44 20 7123 4567</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@beanboutique.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>Mon-Sun: 10AM - 8PM</span>
+            </div>
+          </div>
+        </div>
+
+              </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  
+    <script src="../JS/coffee.js"></script>
+    <script src="../JS/script.js"></script>
+
+
+
+</body>
+
+</html>

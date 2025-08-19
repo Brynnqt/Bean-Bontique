@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css" >
+    <link rel="icon" sizes="180x180" href="../Photo/Tab_logo.png">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <title>Coffee Bean Bontique</title>
+  </head>
+
+  <body>
+    <header>
+      <section>
+        <div >
+          <img src="../Photo/logo-n.png" alt="Coffee Bean Logo" >
+          <span>Bean Boutique</span>
+        </div>
+
+        <!-- Burger Menu Button -->
+        <div class="burger-menu" id="burgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu" id="navMenu">
+          <ul>
+            <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+            <li><a href="coffee_section.html">Coffee</a></li>
+            <li><a href="brewng_equipment.html">Equipments</a></li>
+            <li><a href="special_offer.html">Special Offer</a></li>
+            <li><a href="event.html">Events</a></li>
+          </ul>
+        </nav>
+
+        <div class="cart-icon">
+          <a href="cart.html">
+            <i class="fa-solid fa-basket-shopping" aria-label="cart"></i>
+            <span class="cart-count">0</span>
+          </a>  
+        </div>
+      </section>
+      <div class="popup" id="welcomePopup" >
+        <i class="fa-solid fa-xmark close-btn"  id="popupCloseBtn"></i>
+        <div class="popup-header">
+          <div class="logo">
+            <img src="../Photo/logo-n.png" alt="Coffee Logo" >
+            <span>Bean Boutique</span>
+          </div>
+          <div class="discount-badge">
+            <span class="discount-percent">10%</span>
+            <span class="discount-text">OFF</span>
+          </div>
+        </div>
+
+        <h2>Welcome to Bean Boutique!</h2>
+        <p>
+          Get 10% off your first order when you join our coffee community.
+          Discover premium beans and exclusive offers.
+        </p>
+
+        <form class="popup-form" onsubmit="handleSubscription(event)">
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            >
+          </div>
+
+          <button type="submit" class="subscribe">
+            <i class="fas fa-gift"></i>
+            Claim Your 10% Discount
+          </button>
+
+          <button type="button" class="no-thanks" onclick="closePopup()">
+            Maybe Later
+          </button>
+
+          <div class="popup-footer">
+            <div class="security-badge">
+              <i class="fas fa-shield-alt"></i>
+              <span>Secure & Spam-free</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </header>
+  
+    <!-- Hero Slideshow -->
+    <div class="slideshow-container">
+      <div class="slide active">
+        <div class="slide-content">
+          <h1>Premium Coffee Equipment</h1>
+          <p>
+            Brew your perfect cup with precision. Explore our collection of high-quality coffee makers, grinders, and accessories designed for every coffee enthusiast.
+          </p>
+         <!-- <button>Shop Now<a href="brewng_equipment.html"></a></button>  -->
+         <button onclick="location.href='brewng_equipment.html'">Shop Now</button>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-content">
+          <h1>Welcome to our Coffee Shop</h1>
+          <p>
+            Discover the finest coffee blends from around the world. Every cup
+            tells a story of passion and craftsmanship.
+          </p>
+          <button onclick="location.href='#about-dark'">Learn More</button>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-content">
+          <h1>Premium Coffee Beans</h1>
+          <p>
+            Sourced directly from the finest coffee farms. Each bean is
+            carefully selected for its unique flavor profile.
+          </p>
+          <button onclick="location.href='coffee_section.html'">Explore More</button>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button class="slide-arrow slide-arrow-prev" onclick="changeSlide(-1)" aria-label="left">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="slide-arrow slide-arrow-next" onclick="changeSlide(1)" aria-label="right">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <div class="slide-nav">
+        <span class="nav-dot active"></span>
+        <span class="nav-dot"></span> 
+        <span class="nav-dot"></span>
+      </div>
+    </div>
+
+    <main>
+      
+
+      <!-- enjoy our coffee -->
+             <section class="people-enjoying">
+        <div class="section-header">
+          <h2>The Coffee Experience</h2>
+          <p>See how our customers enjoy their perfect cup of coffee</p>
+        </div>
+
+        <div class="coffee-gallery">
+          <div class="gallery-item main-feature">
+            <div class="image-container">
+              <img
+                src="../Photo/Home/Coffee_Conversations.jpg"
+                alt="Friends enjoying coffee together"
+              >
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Coffee Conversations</h3>
+                  <p>Where friendships brew over perfect cups</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="image-container">
+              <img
+                src="../Photo/Home/Work&Coffee.jpg"
+                alt="Person working with coffee"
+              >
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Work & Coffee</h3>
+                  <p>Stay sharp and focused with the perfect blend of caffeine and comfort. Whether you're tackling a big project, taking a quick meeting, or just need a creative boost, our coffee keeps you energized and inspired all day long.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="image-container">
+              <img
+                src="../Photo/Home/Coffee_Dates.webp"
+                alt="Couple enjoying coffee date"
+              >
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Coffee Dates</h3>
+                  <!-- <p>Perfect moments shared</p> -->
+                   <p>Whether it’s a first date, a catch-up with an old friend, or a quiet moment with someone special, coffee is the perfect companion. Our cozy atmosphere, delicious brews, and welcoming vibe make every coffee date feel just right.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="image-container">
+              <img
+                src="../Photo/Home/business.jpg"
+                alt="Business meeting over coffee"
+              >
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Business Meetings</h3>
+                  <p>Ideas flow with coffee</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="image-container">
+              <img
+                src="../Photo/Home/Welcoming_Atmosphere.jpg"
+                alt="Solo coffee moment"
+              >
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Welcoming Atmosphere</h3>
+                  <p>Cozy and inviting spaces enhance the overall coffee experience, encouraging relaxation, connection, or productivity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="experience-starts">
+          <div class="start-item">
+            <div class="start-number" data-target="1000">1000+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="start-item">
+            <div class="start-number" data-target="25">25+</div>
+            <div class="start-label">Coffee Varieties</div>
+          </div>
+          <div class="start-item">
+            <div class="start-number" data-target="15">15+</div>
+            <div class="start-label">Years of Excellence</div>
+          </div>
+          <div class="start-item">
+            <div class="start-number" data-target="500">500+</div>
+            <div class="start-label">Daily Cups Served</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- why choose us -->
+       <section class="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+          <div class="feature-box">
+            <img src="../Photo/Home/sustainably.png" alt="Sustainably Sourced">
+            <h3>Sustainably Sourced</h3>
+            <p>
+              We partner with farmers who use ethical, sustainable farming
+              practices.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <img src="../Photo/Home/cof_bean.png" alt="Freshly Roasted">
+            <h3>Freshly Roasted</h3>
+            <p>
+              Our beans are roasted in small batches to ensure maximum freshness
+              and flavor.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <img src="../Photo/Home/cof_bag.png" alt="Expertly Crafted">
+            <h3>Expertly Crafted</h3>
+            <p>
+              Each blend is designed to highlight the best qualities of the
+              beans.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu Section -->
+      <div class="products-header">
+        <h2>Our Signature Coffee</h2>
+        <a class="view-all" href="coffee_section.html">View All Coffee →</a>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <span class="discount">Popular</span>
+          <img src="../Photo/Home/cappuccino.jpg" alt="Cappuccino" >
+          <h3>Cappuccino</h3>
+          <p class="product-description">
+            A cappuccino is a popular Italian coffee drink made with espresso,
+            steamed milk, and milk foam.
+          </p>
+
+          <!-- <div class="product-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div> -->
+          <!-- <p class="dis-price"><del>$49.99</del></p> -->
+          <!-- <p class="price"> $39.99</p> -->
+          <div class="button">
+            <a href="coffee_section.html#cappuccino">Shop Now</a>
+          </div>
+          <!-- <button class="btn">Shop Now</button> -->
+        </div>
+
+        <div class="product-card">
+          <span class="discount">Best Seller</span>
+          <img src="../Photo/Home/Espresso.jpg" alt="Espresso" >
+          <h3>Espresso</h3>
+          <p class="product-description">
+            a concentrated coffee beverage brewed by forcing hot water through
+            finely-ground coffee beans under high pressure.
+          </p>
+
+          <!-- <div class="product-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div> -->
+          <!-- <p class="dis-price"><del>$49.99</del></p> -->
+          <!-- <p class="price">$39.99</p> -->
+          <div class="button">
+            <a href="coffee_section.html#espresso">Shop Now</a>
+          </div>
+          <!-- <button class="btn">Shop Now</button> -->
+        </div>
+
+        <div class="product-card">
+          <!-- <span class="discount"></span> -->
+          <img src="../Photo/Home/Latte.jpg" alt="Latte " >
+          <h3>Latte</h3>
+          <p class="product-description">
+            a coffee drink made with espresso and steamed milk, typically topped
+            with a thin layer of foamed milk.
+          </p>
+          <!-- <div class="product-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div> -->
+          <!-- <p class="dis-price"><del>$49.99</del></p> -->
+          <!-- <p class="price">$39.99</p> -->
+          <div class="button">
+            <a href="coffee_section.html#latte">Shop Now</a>
+          </div>
+          <!-- <button class="btn">Shop Now</button> -->
+        </div>
+      </div>
+
+      <!-- Products Section -->
+      <div class="products-header">
+        <h2>Our Products</h2>
+        <a class="view-all" href="brewng_equipment.html"
+          >View All Equipments →</a
+        >
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <span class="discount">Best Seller</span>
+          <img src="../Photo/Home/coffee_maker.jpg" alt="Coffee Maker" >
+          <h3>Coffee Maker</h3>
+          <p class="product-description">
+            Brew rich, flavorful coffee effortlessly with our premium coffee
+            makers—designed for consistency, ease, and perfect extraction.
+          </p>
+
+          <div class="button">
+            <a href="brewng_equipment.html#coffee_maker">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="discount">New</span>
+          <img src="../Photo/Home/premium_bean.jpg" alt="Coffee Beans" >
+          <h3>Premium Coffee Beans</h3>
+          <p class="product-description">
+            Sourced from top-tier farms, our premium coffee beans offer a rich,
+            smooth taste with vibrant aroma—crafted for the perfect cup.
+          </p>
+          <div class="button">
+            <a href="coffee_section.html#coffee_beans">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="discount">Recent</span>
+          <img src="../Photo/Home/coffee_grinder.jpg" alt="Coffee Grinder" >
+          <h3>Manual Burr Grinders</h3>
+          <p class="product-description">
+            deliver precise, consistent grinding with a hands-on approach,
+            perfect for fresh, flavorful coffee anytime, anywhere.
+          </p>
+          <div class="button">
+            <a href="brewng_equipment.html">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Customer Reviews Section -->
+      <section class="review-container">
+        <h2>Customer Reviews</h2>
+
+        <div class="review-main">
+          <div class="recent-feedbacks">
+            <h3>Recent Feedbacks</h3>
+            <div class="feedback-card">
+              <img
+                src="../Photo/Home/review_1.jpg"
+                alt="Robert"
+              >
+              <div>
+                <h4>Robert Karmazov</h4>
+                <p>Excellent coffee and cozy place!</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-card">
+              <img
+                src="../Photo/Home/review_3.jpg"
+                alt="Emma"
+              >
+              <div>
+                <h4>Emma Lane</h4>
+                <p>Great service, loved the cappuccino!</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-card">
+              <img
+                src="../Photo/Home/man_2.jpg"
+                alt="John"
+              >
+              <div>
+                <h4>John Reese</h4>
+                <p>Nice ambiance but coffee was average.</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i
+                  ><i class="fas fa-star-half-alt"></i
+                  ><i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="add-review">
+            <h3>Add a Review</h3>
+            <form>
+              <label>Add Your Rating *</label>
+              <div class="stars">
+                <i class="far fa-star"></i><i class="far fa-star"></i
+                ><i class="far fa-star"></i><i class="far fa-star"></i
+                ><i class="far fa-star"></i>
+              </div>
+              <input type="text" placeholder="Name *" required >
+              <input type="email" placeholder="Email *" required >
+              <textarea placeholder="Write your review *" required></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-dark" id="about-dark">
+        <div class="about-container">
+          <div class="about-text">
+            <h2>About US</h2>
+            <p>
+              Since 1995, Bean Botique has been dedicated to bringing you the finest coffee experience. We source our beans directly from sustainable farms around the world, ensuring every cup delivers exceptional quality and supports ethical farming practices. From the moment the beans are harvested to the final pour, we take pride in our meticulous roasting process that brings out the unique flavor profiles of each origin.<br><br> Our passionate team of baristas is committed to crafting every beverage with care, ensuring consistency and excellence in every sip. At Coffee Bean, it’s not just about coffee—it’s about community, sustainability, and the shared joy of a perfect cup.
+            </p>
+            <a href="#" class="read-more">READ MORE</a>
+            
+          </div>
+          
+
+          <div class="about-image">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EJVbsCfLy-8?si=_Vw8UNE-bfTLfMKv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <span class="image-title">Coffee</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map Section -->
+      <section class="map-section">
+        <div class="map-container">
+          <div class="map-header">
+            <h2>Find Us</h2>
+            <p>
+              Visit our coffee shop and experience the perfect blend of taste
+              and ambiance
+            </p>
+          </div>
+
+          <div class="map-content">
+            <div class="map-info">
+              <div class="location-card">
+                <div class="location-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="location-details">
+                  <h3>Our Bean Boutique Location</h3>
+                  <p>193 Wardour St </p>
+                  <p>London W1F 8ZF, United Kingdom</p>
+                </div>
+              </div>
+
+              <div class="contact-info">
+                <div class="info-item">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>+44 20 7123 4567</span>
+                </div>
+                <div class="info-item">
+                  <i class="fa-solid fa-clock"></i>
+                  <span>Mon-Sun: 10AM - 8PM</span>
+                </div>
+                <div class="info-item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>info@beanboutique.com</span>
+                </div>
+              </div>
+
+              <div class="directions-btn">
+                <a
+                  href="https://maps.app.goo.gl/Br3pQ96hhsmAQuhDA"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-directions"></i>
+                  Get Directions
+                </a>
+              </div>
+            </div>
+
+            <div class="map-embed">
+              <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2360.031189930333!2d-0.1381379737920102!3d51.515378452642565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b0d0e3d50b1%3A0xd204fd58d4328d50!2sKOZZEE%20Cafe%20Soho%20%7C%20Brunch%2C%20Coffee%20%26%20Desserts!5e1!3m2!1sen!2smm!4v1755612938106!5m2!1sen!2smm" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Chatbot widget -->
+    <div id="chatbotWidget" class="chatbot-widget" aria-live="polite" aria-hidden="true">
+      <div class="chatbot-header">
+        <div class="chatbot-title"><i class="fa-solid fa-headset"></i> Ask Customer Service</div>
+        <button class="chatbot-close" id="chatbotClose" aria-label="Minimize chat"><i class="fa-solid fa-minus"></i></button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages" role="log"></div>
+      <form class="chatbot-input-area" id="chatbotForm">
+        <input type="text" id="chatbotInput" placeholder="Ask about coffee, offers, hours..." autocomplete="off" aria-label="Message" required >
+        <button type="submit" class="chatbot-send" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+    <button id="chatbotToggle" class="chatbot-toggle" aria-label="Open chat">
+      <i class="fa-solid fa-comments"></i>
+    </button>
+
+    <button id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="../Photo/logo-n.png" alt="Bean Boutique Logo" >
+            <span>Bean Boutique</span>
+          </div>
+          <p class="footer-description">
+            Discover the finest coffee blends from around the world. Every cup
+            tells a story of passion and craftsmanship since 1995.
+          </p>
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>
+              <a href="homepage.html" class="active" aria-current="page"><i class="fa-solid fa-home"></i>Home</a>
+            </li>
+            <li>
+              <a href="coffee_section.html"
+                ><i class="fa-solid fa-mug-saucer"></i>Coffee</a
+              >
+            </li>
+            <li>
+              <a href="brewng_equipment.html"
+                ><i class="fa-solid fa-gear"></i>Equipment</a
+              >
+            </li>
+            <li>
+              <a href="special_offer.html"
+                ><i class="fa-solid fa-tags"></i>Special Offers</a
+              >
+            </li>
+            <li>
+              <a href="event.html"
+                ><i class="fa-solid fa-calendar-days"></i>Events</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Our Services</h4>
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-graduation-cap"></i>Coffee Brewing
+                Classes</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-seedling"></i>Custom Coffee Blends</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-tools"></i>Coffee Equipment Rental</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-utensils"></i>Corporate Catering</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-champagne-glasses"></i>Private Events</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>193 Wardour St, London W1F 8ZF, United Kingdom</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+44 20 7123 4567</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@beanboutique.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>Mon-Sun: 10AM - 8PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+    <script src="../JS/home.js"></script>
+
+  </body>
+</html>
